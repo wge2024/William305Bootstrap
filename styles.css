@@ -1,0 +1,62 @@
+
+
+header {
+    padding: 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.sidebar {
+    padding-top: 1rem;
+}
+
+.video-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.affiliate-mobile {
+    display: none;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.affiliate-mobile img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    border: .10px solid rgb(28, 28, 28); /* Adds a 2px grey border around the images /
+    / Ensure the border doesn't affect the layout by using box-sizing */
+    box-sizing: border-box;
+}
+
+.affiliate-sidebar img, .affiliate-placeholder img {
+    border: .5px solid rgb(28, 28, 28); /* Adds a 2px grey border around the images /
+    / Ensure the border doesn't affect the layout by using box-sizing /
+    border-radius: 3px; / This will give a slight roundness to the corners */
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .affiliate-mobile {
+        display: block;
+    }
+    .logo {
+        max-width: 100px; 
+    }
+}
